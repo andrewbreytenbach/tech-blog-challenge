@@ -1,0 +1,11 @@
+{{#each posts}}
+  <div>
+    <h2>{{title}}</h2>
+    <p>Created by {{user.username}} on {{createdAt}}</p>
+    <p>{{content}}</p>
+    <a href="/dashboard/edit/{{id}}">Edit</a>
+    <a href="/api/posts/{{id}}" class="delete-post-btn">Delete</a>
+  </div>
+{{/each}}
+
+<a href="/dashboard/new">New Post</a>
